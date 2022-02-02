@@ -1,0 +1,47 @@
+html { 
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	margin: 0;
+	font-family: Verdana,sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+#login-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+#login {
+	margin-top: 200px;
+	padding: 10px;
+	background-color: #CCC;
+}
+
+#navbar {
+	margin: 10px 20px;
+}
+
+#add-form-wrap {
+	width: 300px;
+	margin: 50px 20px 40px;
+	padding: 10px;
+	background-color: #BBB;
+}
+
+#list-wrap {
+	width: 800px;
+	margin: 50px 20px 40px;
+	padding: 10px;
+	border: solid #BBB;
+}
+
+.delete {
+	background-color: #F33;
+}
+	

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Watchlist Page</title>
-	<link rel="stylesheet" href="styles.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<script src="jquery-3.6.0.min.js"></script>
 	<script language="JavaScript" type="text/javascript">
 		$(document).ready(function() {
@@ -69,21 +69,24 @@
 </head>
 
 <body>
-	<div id="navbar">
-		<button id="logout">Logout</button>
-	</div>
+	<div class="mt-2 mx-3">
+		<div class="container">
+			<button id="logout" class="btn btn-secondary float-end">Logout</button>
+		</div>
 	
-	<div id="add-form-wrap">
-		<h4>Add Film</h4>
-		<p><label for="title">Title</label>
-		<input id="title" type="text" name="title" />
-		<p><label for="release-date">Release Date</label>
-		<input id="release-date" type="date" name="release_date" /></p>
-		<button id="add">Add</button>
-	</div>
+		<div class="w-50 bg-secondary rounded p-3">
+			<h4>Add Film</h4>
+			<label for="title" class="form-label mt-2">Title</label>
+			<input id="title" type="text" name="title" class="form-control"/>
+			<label for="release-date" class="form-label mt-2">Release Date</label>
+			<input id="release-date" type="date" name="release_date" class="form-control"/>
+			<button id="add" class="btn btn-light mt-3">Add</button>
+		</div>
+
+		<div id="list-wrap" class="w-50 border border-3 rounded p-3 mt-4">
+			<?php include("list_view.php"); ?>
+		</div>
 	
-	<div id="list-wrap">
-		<?php include("list_view.php"); ?>
 	</div>
 
 </body>
